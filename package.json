@@ -1,5 +1,5 @@
 {
-  "name": "travel-site",
+  "name": "q-we-r",
   "version": "1.0.0",
   "scripts": {
     "dev": "webpack serve",
