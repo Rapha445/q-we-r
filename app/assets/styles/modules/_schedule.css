@@ -1,0 +1,22 @@
+.schedule {
+
+    &__title {
+        display: flex;
+        align-items: flex-end;
+        gap: 2.813rem;
+    }
+
+    &__events {
+        margin-left: 6.25rem;
+        margin-right: 2.5rem;
+
+        &--margin-t-big {
+        margin-top: 10rem;
+        }
+
+        &--margin-t-small {
+            margin-top: 1.875rem;
+        }
+    }
+    
+}

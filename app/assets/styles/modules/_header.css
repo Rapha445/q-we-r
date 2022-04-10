@@ -1,0 +1,9 @@
+.header {
+    height: 5rem;
+    padding: 0 0 3.75rem 0;
+
+    &__logo {
+        font-weight: 200;
+        font-size: 3rem;
+    }
+}

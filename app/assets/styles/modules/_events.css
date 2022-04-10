@@ -1,0 +1,59 @@
+.events {
+
+    border-bottom: 1px solid black;
+    padding-bottom: 0.5rem;
+
+    &__flexbox {
+        display: flex;
+        align-items: flex-end;
+    }
+    
+    &__date {
+
+        flex-basis: 15%;
+
+        &--en {
+            font-weight: 200;
+            font-style: italic;
+            font-size: 0.75rem;
+        }
+
+        &--jp {
+            font-family: 'Noto Sans JP', sans-serif;
+            font-weight: 400;
+            font-size: 1.25rem;
+        }
+    }
+
+    &__type {
+        flex-basis: 14%;
+        margin: 0 4% 0 0;
+
+        & p {
+        font-weight: 700;
+        font-size: 0.875;
+        display: block;
+        border: 1px solid black;
+        padding: 7px 15px;
+        text-align: center;
+        }
+        
+    }
+
+    &__name {
+        flex-basis: 54%;
+        font-weight: 600;
+        font-style: italic;
+        font-size: 1.875rem;
+    }
+
+    &__button {
+        background-color: black;
+        color: #FFF;
+        border-radius: 1.5rem;
+        border: none;
+        padding: 15px 30px;
+        font-size: 0.875;
+        font-weight: 500;
+    }
+}

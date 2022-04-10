@@ -1,0 +1,43 @@
+.about-us {
+    position: relative;
+    margin-bottom: 35.313rem;
+
+    &__background-image {
+        height: 620px;
+    }
+
+    &__content-box {
+        position: absolute;
+        top: 62%;
+        right: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        width: 81%;
+        background-color: #FFF;
+    }
+
+    &__text-box {
+        display: flex;
+        flex-direction: row;
+        margin-right: 3.75rem;
+        margin-left: 3.75rem;
+        gap: 3.75rem;
+
+        & p {
+            flex: 1 1 0px;
+            line-height: 1.8;
+        }
+    }
+
+    &__organizer-box {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 1.44rem;
+        margin-right: 3.75rem;
+        margin-left: 3.75rem;
+        margin-top: 2rem;
+    }
+}
+

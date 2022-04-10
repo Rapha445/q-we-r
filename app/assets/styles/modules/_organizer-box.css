@@ -1,0 +1,16 @@
+.organizer-box {
+
+    &__text {
+        font-weight: 600;
+        font-size: 1.75rem;
+    }
+
+    &__content {
+
+        & p {
+            font-weight: 400;
+            font-size: 0.875rem;
+            line-height: 1.2;
+        }
+    }
+}

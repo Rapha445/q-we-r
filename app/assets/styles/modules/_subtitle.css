@@ -1,0 +1,30 @@
+.subtitle {
+    margin-top: 16.25rem;
+    margin-bottom: 12.5rem;
+
+    &__english {
+        font-size: 6.25rem;
+        font-weight: 200;
+        font-style: italic;
+        line-height: 1.2;
+    }
+
+    &__japanese {
+        font-family: 'Rampart One', cursive;
+        font-size: 1.25rem;
+        line-height: 1.2;
+    }
+
+    &--t-b-margin {
+        margin-bottom: 5rem;
+        margin-top: 1.5rem;
+        }
+
+    &--align-right {
+        text-align: end;
+    }
+
+    &--align-center {
+        text-align: center;
+    }
+}
