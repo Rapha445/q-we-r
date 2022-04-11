@@ -1,7 +1,6 @@
 .section-title {
         font-size: 10.625rem;
         font-weight: 600;
-        text-align: center;
         line-height: 1;
 
         &--align-left {
@@ -10,5 +9,9 @@
 
         &--line-height-s {
             line-height: 0.7;
+        }
+
+        &--align-center {
+        text-align: center;
         }
     }

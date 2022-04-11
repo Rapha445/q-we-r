@@ -1,17 +1,19 @@
 .about-us {
     position: relative;
-    margin-bottom: 35.313rem;
+    padding-bottom: 3.125rem;
+    margin-bottom: 12.5rem;
 
-    &__background-image {
+    &__background {
         height: 620px;
+        position: absolute;
+        top: -400px;
+        right: 0;
+        display: block;
+        z-index: -1;
     }
 
     &__content-box {
-        position: absolute;
-        top: 62%;
-        right: 0;
-        left: 50%;
-        transform: translate(-50%, 0);
+        margin: 0 auto;
         width: 81%;
         background-color: #FFF;
     }
@@ -19,13 +21,15 @@
     &__text-box {
         display: flex;
         flex-direction: row;
+        margin-top: 4.063rem;
         margin-right: 3.75rem;
         margin-left: 3.75rem;
+        margin-bottom: 3.125rem;
         gap: 3.75rem;
 
         & p {
             flex: 1 1 0px;
-            line-height: 1.8;
+            line-height: 1.2;
         }
     }
 
@@ -37,7 +41,7 @@
         gap: 1.44rem;
         margin-right: 3.75rem;
         margin-left: 3.75rem;
-        margin-top: 2rem;
+        margin-bottom: 1rem;
     }
 }
 

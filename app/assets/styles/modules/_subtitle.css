@@ -1,6 +1,5 @@
 .subtitle {
-    margin-top: 16.25rem;
-    margin-bottom: 12.5rem;
+    margin-bottom: 37.5rem;
 
     &__english {
         font-size: 6.25rem;
@@ -14,11 +13,6 @@
         font-size: 1.25rem;
         line-height: 1.2;
     }
-
-    &--t-b-margin {
-        margin-bottom: 5rem;
-        margin-top: 1.5rem;
-        }
 
     &--align-right {
         text-align: end;
