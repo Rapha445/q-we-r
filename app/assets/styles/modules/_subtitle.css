@@ -4,14 +4,14 @@
     padding-top: min(7%, 6.25rem);
     padding-bottom: min(6%, 5rem);
 
-    &__english {
+    &--english {
         font-size: min(7vw,6.25rem);
         font-weight: 200;
         font-style: italic;
         line-height: 1.2;
     }
 
-    &__japanese {
+    &--japanese {
         font-family: 'Rampart One', cursive;
         font-size: clamp(1rem,1.5vw,1.25rem);
         line-height: 1.2;

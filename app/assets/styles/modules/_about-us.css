@@ -1,23 +1,23 @@
 .about-us {
-    position: relative;
-    margin-bottom: clamp(3rem, 19%, 16.875rem);
     margin-top: -11.7rem;
+    margin-bottom: clamp(3rem, 19%, 16.875rem);
+    overflow: visible;
 
     &__background {
-        max-width: 100%;
         display: block;
-        transform: translateY(30%);
+        max-width: 100%;
+        transform: translateY(35%);
     }
 
     &__content-box {
         position: relative;
-        margin: 0 auto;
+        z-index: 5;
         width: clamp(90%, 100px, 81%);
+        max-width: 700px;
+        margin: 0 auto;
+        padding-bottom: 3.125rem;
         background-color: #FFF;
         box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
-        padding-bottom: 3.125rem;
-        max-width: 700px;
-        z-index: 5;
 
         @mixin atLarge {
             max-width: 100%;
@@ -28,9 +28,9 @@
         display: flex;
         flex-direction: column;
         margin-top: 4.063rem;
+        margin-bottom: 3.125rem;
         margin-right: clamp(2rem, 10%, 3.75rem);
         margin-left: clamp(2rem, 10%, 3.75rem);
-        margin-bottom: 3.125rem;
         gap: 3.75rem;
 
         @mixin atLarge {
@@ -39,8 +39,8 @@
 
         & p {
             flex: 1 1 0px;
-            line-height: 1.2;
             font-size: clamp(0.8rem, 2vw, 1rem);
+            line-height: 1.2;
         }
     }
 

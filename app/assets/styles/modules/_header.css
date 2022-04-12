@@ -1,9 +1,10 @@
 .header {
-    height: 5rem;
+    margin-top: 1.25rem;
     padding-bottom: 1.25rem;
+    max-height: 5rem;
 
     &__logo {
-        font-weight: 200;
-        font-size: 3rem;
+    display: block;
+    max-height: 5rem;
     }
 }

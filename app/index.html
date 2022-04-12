@@ -16,7 +16,7 @@
 <body>
     <header>
         <div class="container header">
-            <h1 class="header__logo">LOGO</h1>
+            <img class="header__logo" src="./assets/images/logo-en.jpg" alt="Q(WE)R">
         </div>
     </header>
     <main>
@@ -38,9 +38,9 @@
         </div>
 
         <div class="container subtitle">
-            <p class="subtitle__english">Under Construction</p>
-            <p class="subtitle__english subtitle--align-right">Available Soon</p>
-            <p class="subtitle__japanese subtitle--align-right subtitle--top-margin" lang="jp">
+            <p class="subtitle--english">Under Construction</p>
+            <p class="subtitle--english subtitle--align-right">Available Soon</p>
+            <p class="subtitle--japanese subtitle--align-right subtitle--top-margin" lang="jp">
                 ウェブサイトは制作中です。
             </p>
         </div>
@@ -49,10 +49,11 @@
             <div class="about-us__background">
                 <img src="./assets/images/about-us.jpg" alt="">
             </div>
-            <div class="about-us__content-box bicolor">
-                <h2 class="section-title section-title--align-center section-title--translateY" data-text="About Us">
+            <div class="about-us__content-box">
+                <h2 class="section-title section-title--align-center section-title--translateY section-title--bicolor"
+                    data-text="About Us">
                 </h2>
-                <h3 class="subtitle__japanese subtitle--align-center" lang="jp">私たちについて</h3>
+                <h3 class="subtitle--japanese subtitle--align-center" lang="jp">私たちについて</h3>
                 <div class="about-us__text-box">
                     <p>Q(WE)R is a series of performances, film screenings, parties, conversations and exhibitions at
                         the
@@ -83,39 +84,39 @@
             <div class="schedule__title">
                 <h2 class="section-title section-title--align-left section-title--line-height-s">
                     Schedule</h2>
-                <h3 class="subtitle__japanese" lang="jp">スケジュール</h3>
+                <h3 class="subtitle--japanese" lang="jp">スケジュール</h3>
             </div>
             <div class="schedule__events-box">
-                <div class="schedule__event schedule__event--margin-t-big event">
+                <div class="schedule__event event">
                     <p class="event__date event__date--en">April.22 (Fri)</p>
-                    <div class="event__grid">
+                    <div class="event__grid--4">
                         <p class="event__date event__date--jp" lang="jp"> <span>4</span>月<span>22</span>日（金）</p>
                         <div class="event__type event__type--more-margin">
                             <p>PARTY</p>
                         </div>
                         <p class="event__name">Festival Launch</p>
                         <div class="event__button">
-                            <a class="event__button__off" href="">View More</a>
+                            <a class="event__link event__link--off" href="">View More</a>
                         </div>
                     </div>
                 </div>
                 <div class="schedule__event schedule__event--margin-t-small event">
                     <p class="event__date event__date--en">April.23 (Sat)</p>
-                    <div class="event__grid">
+                    <div class="event__grid--4">
                         <p class="event__date event__date--jp" lang="jp"> <span>4</span>月<span>23</span>日（土）</p>
                         <div class="event__type">
                             <p>PARTY&TALKS</p>
                         </div>
                         <p class="event__name">WAIFU-DIAMONDS PRIDE Special-</p>
                         <div class="event__button">
-                            <a class="event__button__off" href="">View More</a>
+                            <a class="event__link event__link--off" href="">View More</a>
                         </div>
                     </div>
                 </div>
                 <div class="schedule__event schedule__event--margin-t-small event">
                     <p class="event__date event__date--en">April.26 (Tue) - April.28 (Thu)</p>
-                    <div class="event__grid">
-                        <p class="event__date event__date--jp" lang="jp"> <span>4</span>月<span>26</span>日（火） <br> ー <br>
+                    <div class="event__grid--5">
+                        <p class="event__date event__date--jp" lang="jp"> <span>4</span>月<span>26</span>日（火） ー
                             <span>4</span>月<span>28</span>日（木）
                         </p>
                         <div class="event__type">
@@ -123,8 +124,10 @@
                         </div>
                         <p class="event__name">Q(WE)R FILM FESTIVAL</p>
                         <div class="event__button">
-                            <a class="event__button__off" href="">View More</a>
-                            <a class="event__button__on"
+                            <a class="event__link event__link--off" href="">View More</a>
+                        </div>
+                        <div class="event__button-2">
+                            <a class="event__link"
                                 href="https://peatix.com/event/3220303/view?k=588e09a85825c625380d42f99f98daffb7b709b4">Get
                                 Tickets</a>
                         </div>
@@ -132,7 +135,6 @@
                 </div>
                 <p class="more">And many more...</p>
             </div>
-
         </div>
     </main>
     <footer>

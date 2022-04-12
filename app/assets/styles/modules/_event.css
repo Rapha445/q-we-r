@@ -1,16 +1,28 @@
 .event {
-    border-bottom: 1px solid black;
     padding-bottom: 0.5rem;
+    border-bottom: 1px solid black;
 
-    &__grid {
+    &__grid--4 {
         display: grid;
-        grid-template-columns: 40% 60%;
-        grid-template-rows: 3;
-        row-gap: 2rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 3rem 4rem 4rem 4rem;
+        row-gap: 0;
 
         @mixin atXLarge {
-        grid-template-columns: 15% 20% 50% 15%;
-        grid-template-rows: 1;
+        grid-template-columns: 18% 17% 50% 15%;
+        grid-template-rows: 1fr;
+        }
+    }
+
+    &__grid--5 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5,1fr);
+        row-gap: 0;
+
+        @mixin atXLarge {
+        grid-template-columns: 18% 17% 50% 15%;
+        grid-template-rows: 1fr;
         }
     }
     
@@ -18,53 +30,58 @@
         grid-column: 1 / 2;
 
         &--en {
+            font-size: 1rem;
             font-weight: 200;
             font-style: italic;
-            font-size: 0.75rem;
+
+
+            @mixin atXLarge {
+               font-size: 0.75rem;
+            }
         }
 
         &--jp {
             font-family: 'Noto Sans JP', sans-serif;
+            font-size: 1.25rem;
             font-weight: 400;
-            font-size: clamp(0.7rem, 1.4vw, 1.25rem);
 
             & span {
-                font-family: 'Poppins';
+                font-family: 'Poppins', sans-serif;
                 font-size: clamp(1rem, 2.1vw, 1.875rem);
             }
         }
-
-        
     }
 
     &__type {
-        grid-column: 2/3;
-        justify-self: end;
+        grid-row: 2/3;
+        grid-column: 1/2;
         width: 140px;
 
         @mixin atXLarge {
-        margin: 0 4% 0 0;
-        width: 150px;
+            grid-row: 1/2;
+            grid-column: 2/3;
+            width: 150px;
+            margin: 0 4% 0 0;
         }
 
         & p {
-        font-weight: 700;
-        font-size: 0.875;
-        display: block;
-        border: 1px solid black;
-        padding: 5px 15px;
-        text-align: center;
+            display: block;
+            text-align: center;
+            font-size: 0.875;
+            font-weight: 700;
+            border: 1px solid black;
+            padding: 5px 15px;
         }
         
     }
 
     &__name {
-        grid-column: 1/3;
-        grid-row: 2/3;
+        grid-column: 1/2;
+        grid-row: 3/4;
+        text-align: center;
+        font-size: clamp(1.5rem, 2.1vw, 1.875rem);
         font-weight: 600;
         font-style: italic;
-        font-size: clamp(1.5rem, 2.1vw, 1.875rem);
-        text-align: center;
 
         @mixin atXLarge {
             grid-column: 3/4;  
@@ -73,45 +90,46 @@
     }
 
     &__button {
-        grid-column: 1/3;
-        grid-row: 3/4;
-
-        &__on {
-        background-color: black;
-        color: #FFF;
-        border-radius: 1.5rem;
-        border: none;
-        padding: 15px 30px;
-        font-size: 0.875;
-        font-weight: 500;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        width: fit-content;
-        text-decoration: none;
-        margin-bottom: 1rem;
-        }
+        grid-column: 1/2;
+        grid-row: 4/5;
 
         @mixin atXLarge {
             grid-column: 4/5;  
             grid-row: 1/2;  
         }
+    } 
 
-        &__off {
-        background-color: white;
-        color: grey;
-        border: 1px solid grey;
-        border-radius: 1.5rem;
+    &__button-2 {
+        grid-column: 1/2;
+        grid-row: 5/6;
+
+        @mixin atXLarge {
+            grid-column: 4/5;  
+            grid-row: 2/3;  
+        }
+    } 
+
+    &__link {
+
+        display: block;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
         padding: 15px 30px;
         font-size: 0.875;
         font-weight: 500;
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        width: fit-content;
         text-decoration: none;
-        margin-bottom: 1rem;
-        pointer-events: none;
+        color: #FFF;
+        background-color: black;
+        border: none;
+        border-radius: 1.5rem;
+
+        &--off {
+            background-color: white;
+            color: grey;
+            border: 1px solid grey;
+            pointer-events: none;
         }
-    }
+    }    
 }

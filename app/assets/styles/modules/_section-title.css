@@ -12,7 +12,7 @@
         }
 
         &--align-center {
-        text-align: center;
+            text-align: center;
         }
 
         &--translateY {
@@ -22,4 +22,29 @@
             transform: translateY(-61%);
             margin-bottom: max(-90px, -8%);
         }
-    }
+
+        &--bicolor {
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.3);
+
+            &::before,
+            &::after {
+                content:attr(data-text);
+            }
+
+            &::after {
+                color: black ;
+                clip-path: inset(60.5% 0% 0% 0%);
+                text-align: center;
+                position: absolute;
+                top: 0px;
+                margin-left: auto;
+                margin-right: auto;
+                left: 0;
+                right: 0;
+            }
+        }
+}    
