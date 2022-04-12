@@ -22,8 +22,4 @@
             transform: translateY(-61%);
             margin-bottom: max(-90px, -8%);
         }
-
-        &--translateY-less {
-            
-        }
     }
