@@ -1,7 +1,7 @@
 .more {
-    margin-top: 6.25rem;
-    margin-bottom: 25rem;
+    padding-top: min(8.5%,6.25rem);
+    padding-bottom: min(16.5%, 12.5rem);
     font-weight: 600;
-    font-size: 5rem;
+    font-size: min(6vw, 5rem);
     text-align: center;
 }

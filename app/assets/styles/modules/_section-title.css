@@ -1,5 +1,5 @@
 .section-title {
-        font-size: 10.625rem;
+        font-size: min(12vw,10.625rem);
         font-weight: 600;
         line-height: 1;
 
@@ -13,5 +13,17 @@
 
         &--align-center {
         text-align: center;
+        }
+
+        &--translateY {
+            position: relative;
+            max-width: 100%;
+            display: block;
+            transform: translateY(-61%);
+            margin-bottom: max(-90px, -8%);
+        }
+
+        &--translateY-less {
+            
         }
     }

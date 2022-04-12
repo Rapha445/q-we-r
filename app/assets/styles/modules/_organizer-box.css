@@ -2,14 +2,14 @@
 
     &__text {
         font-weight: 600;
-        font-size: 1.75rem;
+        font-size: min(4vw, 1.75rem);
     }
 
     &__content {
 
         & p {
             font-weight: 400;
-            font-size: 0.875rem;
+            font-size: min(2.5vw, 0.875rem);
             line-height: 1.2;
         }
     }

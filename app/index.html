@@ -38,23 +38,21 @@
         </div>
 
         <div class="container subtitle">
-            <p class="subtitle__english">English Subtitle here</p>
+            <p class="subtitle__english">English Subtitle Here</p>
             <p class="subtitle__english subtitle--align-right">English Subtitle here</p>
-            <p class="subtitle__japanese subtitle--align-right subtitle--t-b-margin" lang="jp">
+            <p class="subtitle__japanese subtitle--align-right subtitle--top-margin" lang="jp">
                 日本語サブタイトルが入ります。日本語サブタイトルが入ります。日本語サブタイトルが入ります。
             </p>
         </div>
 
-        <div class="about-us">
+        <div class=" container container--no-padding about-us">
             <div class="about-us__background">
                 <img src="./assets/images/about-us.jpg" alt="">
             </div>
-            <div class="about-us__content-box">
-                <div class="bicolor">
-                    <h2 class="section-title section-title--align-center" data-text="About Us">
-                    </h2>
-                </div>
-                <h3 class="subtitle__japanese subtitle--align-center subtitle--t-b-margin" lang="jp">私たちについて</h3>
+            <div class="about-us__content-box bicolor">
+                <h2 class="section-title section-title--align-center section-title--translateY" data-text="About Us">
+                </h2>
+                <h3 class="subtitle__japanese subtitle--align-center" lang="jp">私たちについて</h3>
                 <div class="about-us__text-box">
                     <p>Q(WE)R is a series of performances, film screenings, parties, conversations and exhibitions at
                         the
@@ -72,7 +70,7 @@
                 <div class="about-us__organizer-box organizer-box">
                     <p class="organizer-box__text">Organizer</p>
                     <div class="organizer-box__content">
-                        <p>French Embassy</p>
+                        <p>French Institute</p>
                         <p lang="fr">Institut Francais du Japon</p>
                     </div>
                 </div>
@@ -83,32 +81,40 @@
 
         <div class="container schedule">
             <div class="schedule__title">
-                <h2 class="section-title section-title--align-left section-title--line-height-s">Schedule</h2>
+                <h2 class="section-title section-title--align-left section-title--line-height-s">
+                    Schedule</h2>
                 <h3 class="subtitle__japanese" lang="jp">スケジュール</h3>
             </div>
-            <div class="schedule__events schedule__events--margin-t-big events">
-                <p class="events__date--en">April.22 (Fri)</p>
-                <div class="events__flexbox">
-                    <p class="events__date--jp" lang="jp"> <span>4</span>月<span>22</span>日（金）</p>
-                    <div class="events__type events__type--more-margin">
-                        <p>PARTY</p>
+            <div class="schedule__events-box">
+                <div class="schedule__event schedule__event--margin-t-big event">
+                    <p class="event__date event__date--en">April.22 (Fri)</p>
+                    <div class="event__grid">
+                        <p class="event__date event__date--jp" lang="jp"> <span>4</span>月<span>22</span>日（金）</p>
+                        <div class="event__type event__type--more-margin">
+                            <p>PARTY</p>
+                        </div>
+                        <p class="event__name">Festival Launch</p>
+                        <div class="event__button">
+                            <button>View More</button>
+                        </div>
                     </div>
-                    <p class="events__name">Festival Launch</p>
-                    <button class="events__button">View More</button>
                 </div>
-            </div>
-            <div class="schedule__events schedule__events--margin-t-small events">
-                <p class="events__date--en">April.23 (Sat)</p>
-                <div class="events__flexbox">
-                    <p class="events__date--jp" lang="jp">4月23日（土）</p>
-                    <div class="events__type">
-                        <p>PARTY&TALKS</p>
+                <div class="schedule__event schedule__event--margin-t-small event">
+                    <p class="event__date event__date--en">April.23 (Sat)</p>
+                    <div class="event__grid">
+                        <p class="event__date event__date--jp" lang="jp"> <span>4</span>月<span>23</span>日（土）</p>
+                        <div class="event__type">
+                            <p>PARTY&TALKS</p>
+                        </div>
+                        <p class="event__name">WAIFU-DIAMONDS PRIDE Special-</p>
+                        <div class="event__button">
+                            <button>View More</button>
+                        </div>
                     </div>
-                    <p class="events__name">WAIFU-DIAMONDS PRIDE Special-</p>
-                    <button class="events__button">View More</button>
                 </div>
+                <p class="more">And many more...</p>
             </div>
-            <p class="more">And many more...</p>
+
         </div>
     </main>
     <footer>

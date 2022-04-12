@@ -1,19 +1,19 @@
 .footer {
     background-color: black;
     color: #FFF;
-    padding-top: 3.125rem;
+    padding-top: min(4%, 3.125rem);
     
     & img {
-        height: 50px;
-        width: 50px;
+        height: min(10%, 50px);
+        width: min(10%, 50px);
         display: block;
         margin: 0 auto;
     }
 
     & p {
-        padding-top: 3.125rem;
+        padding-top: min(4%, 3.125rem);
         font-size: 0.875rem;
         text-align: center;
-        padding-bottom: 2.188rem;
+        padding-bottom: min(3%,2.188rem);
     }
 }
