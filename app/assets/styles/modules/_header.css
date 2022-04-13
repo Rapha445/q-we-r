@@ -4,7 +4,96 @@
     max-height: 5rem;
 
     &__logo {
-    display: block;
-    max-height: 5rem;
+        display: block;
+        max-height: 5rem;
+    }
+
+    &__menu-icon-container {
+        width: 80px;
+        height: 80px;
+        background-color: black;
+        position: absolute;
+        top: 20px;
+        right: 48px;
+        border-radius: 50%;
+    }
+
+    &__menu-icon {
+        width: 40px;
+        height: 28px;
+        position: relative;
+        top: 26px;
+        left: 20px;
+        z-index: 10;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 40px;
+            height: 4px;
+            background-color: #FFF;
+            transform-origin: 0% 0%;
+            transition: transform .3s ease-out;
+            border-radius: 2px;
+        }
+
+        &__middle {
+            position: absolute;
+            top: 12px;
+            left: 0;
+            width: 40px;
+            height: 4px;
+            background-color: #FFF;
+            transition: all .3s ease-out;
+            transform-origin: 0 50%;
+            border-radius: 2px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            width: 40px;
+            height: 4px;
+            background-color: #FFF;
+            transform-origin: 0% 100%;
+            transition: transform .3s ease-out;
+            border-radius: 2px;
+        }
+
+        &--close-x {
+
+            &::before {
+                transform: rotate(45deg) scaleX(1.25) translateY(-7px);
+            }
+
+            .header__menu-icon__middle {
+                opacity: 0;
+                transform: scaleX(0);
+            }
+
+            &::after {
+                transform: rotate(-45deg) scaleX(1.25) translateY(7px);
+            }
+        }
+    }
+
+    &__menu-content {
+        opacity: 0;
+        transform: scale(1.2);
+        transition: all .3s ease-out;
+        position: relative;
+        z-index: -10;
+        padding-top: 90px;
+        text-align: center;
+
+        &--is-visible {
+            opacity: 1;
+            z-index: 1;
+            transform: scale(1);
+        }
     }
 }

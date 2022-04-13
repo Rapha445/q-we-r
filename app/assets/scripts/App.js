@@ -1,6 +1,8 @@
 import '../styles/styles.css';
 import 'lazysizes';
-import Modal from './modules/Modal';
+import HamburgerMenu from './modules/HamburgerMenu';
+
+new HamburgerMenu();
 
 let modal;
 window.addEventListener("DOMContentLoaded", e => {
