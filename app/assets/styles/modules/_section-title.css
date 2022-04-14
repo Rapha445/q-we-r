@@ -1,50 +1,50 @@
 .section-title {
-        font-size: min(12vw,10.625rem);
-        font-weight: 600;
-        line-height: 1;
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1;
 
-        &--align-left {
-            text-align: left;
-        }
+  &--align-left {
+    text-align: left;
+  }
 
-        &--line-height-s {
-            line-height: 0.7;
-        }
+  &--line-height-s {
+    line-height: 0.7;
+  }
 
-        &--align-center {
-            text-align: center;
-        }
+  &--align-center {
+    text-align: center;
+  }
 
-        &--translateY {
-            position: relative;
-            max-width: 100%;
-            display: block;
-            transform: translateY(-61%);
-            margin-bottom: max(-90px, -8%);
-        }
+  &--translateY {
+    position: relative;
+    max-width: 100%;
+    display: block;
+    transform: translateY(-61%);
+    margin-bottom: max(-90px, -8%);
+  }
 
-        &--bicolor {
-            position: relative;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-            color: rgba(255, 255, 255, 0.3);
+  &--bicolor {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.3);
 
-            &::before,
-            &::after {
-                content:attr(data-text);
-            }
+    &::before,
+    &::after {
+      content: attr(data-text);
+    }
 
-            &::after {
-                color: black ;
-                clip-path: inset(60.5% 0% 0% 0%);
-                text-align: center;
-                position: absolute;
-                top: 0px;
-                margin-left: auto;
-                margin-right: auto;
-                left: 0;
-                right: 0;
-            }
-        }
-}    
+    &::after {
+      color: black;
+      clip-path: inset(60.5% 0% 0% 0%);
+      text-align: center;
+      position: absolute;
+      top: 0px;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+    }
+  }
+}
