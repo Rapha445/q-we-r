@@ -1,5 +1,5 @@
 .section-title {
-  font-size: 5rem;
+  font-size: min(6vw, 5rem);
   font-weight: 600;
   line-height: 1;
 
