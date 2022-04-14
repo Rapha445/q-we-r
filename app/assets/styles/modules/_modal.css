@@ -1,44 +1,44 @@
 .modal {
-    opacity: 0;
-    visibility: hidden;
-    transform: scale(1.2);
-    transition: all 0.3s ease-out;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(255, 255, 255, .97);
-    z-index: 99;
-    display: flex;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.2);
+  transition: all 0.3s ease-out;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.97);
+  z-index: 99;
+  display: flex;
 
-    &--is-visible {
-        opacity: 1;
-        visibility: visible;
-        transform: scale(1);
+  &--is-visible {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+
+  &__inner {
+    flex: 1;
+    margin: auto;
+
+    & img {
+      display: block;
+      max-width: 80%;
+      max-height: 70vh;
+      margin: 0 auto;
     }
 
-    &__inner {
-        flex: 1;
-        margin: auto;
+    & p {
+      text-align: center;
+      font-size: 2rem;
+      cursor: pointer;
 
-        & img {
-            display: block;
-            max-width: 80%;
-            max-height: 70vh;
-            margin: 0 auto;
-        }
-
-        & p {
-            text-align: center;
-            font-size: 2rem;
-            cursor: pointer;
-
-            &::after {
-                content: "  >";
-                position: relative;
-                top: 3px;
-            }
-        }
+      &::after {
+        content: "  >";
+        position: relative;
+        top: 3px;
+      }
     }
+  }
 }

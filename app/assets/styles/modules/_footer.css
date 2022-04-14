@@ -1,19 +1,19 @@
 .footer {
-    padding-top: min(4%, 3.125rem);
-    color: #FFF;
-    background-color: black;
-    
-    & img {
-        display: block;
-        height: min(10%, 50px);
-        width: min(10%, 50px);
-        margin: 0 auto;
-    }
+  padding-top: min(4%, 3.125rem);
+  color: #fff;
+  background-color: black;
 
-    & p {
-        padding-top: min(4%, 3.125rem);
-        padding-bottom: min(3%,2.188rem);
-        text-align: center;
-        font-size: 0.875rem;
-    }
+  & img {
+    display: block;
+    height: min(10%, 50px);
+    width: min(10%, 50px);
+    margin: 0 auto;
+  }
+
+  & p {
+    padding-top: min(4%, 3.125rem);
+    padding-bottom: min(3%, 2.188rem);
+    text-align: center;
+    font-size: 0.875rem;
+  }
 }

@@ -1,10 +1,10 @@
 .container {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding-left: min(7%, 6rem);
-    padding-right: min(7%, 6rem);
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: min(7%, 6rem);
+  padding-right: min(7%, 6rem);
 
-    &--no-padding {
-        padding: 0;
-    }
+  &--no-padding {
+    padding: 0;
+  }
 }
