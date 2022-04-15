@@ -1,0 +1,60 @@
+.event-page {
+  margin-top: 30px;
+  margin-bottom: 4rem;
+  overflow: visible;
+
+  &__schedule__title {
+    padding-bottom: 50px;
+  }
+
+  &__background {
+    display: block;
+    max-width: 100%;
+    transform: translateY(35%);
+  }
+
+  &__content-box {
+    z-index: 5;
+    width: clamp(90%, 100px, 81%);
+    max-width: 700px;
+    margin: 0 auto;
+    padding-bottom: 3.125rem;
+    background-color: black;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px,
+      rgba(17, 17, 26, 0.05) 0px 8px 32px;
+
+    @mixin atLarge {
+      max-width: 100%;
+    }
+  }
+
+  &__text-box {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4.063rem;
+    margin-bottom: 3.125rem;
+    margin-right: clamp(2rem, 10%, 3.75rem);
+    margin-left: clamp(2rem, 10%, 3.75rem);
+    gap: 3.75rem;
+
+    @mixin atLarge {
+      flex-direction: row;
+    }
+
+    & p {
+      flex: 1 1 0px;
+      font-size: clamp(0.8rem, 2vw, 1rem);
+      line-height: 1.2;
+    }
+  }
+
+  &__organizer-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.44rem;
+    margin-right: min(5%, 3.75rem);
+    margin-left: min(5%, 3.75rem);
+  }
+}
