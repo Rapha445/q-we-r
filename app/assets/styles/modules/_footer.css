@@ -5,6 +5,7 @@
 
   &__organizer {
     margin-bottom: 2rem;
+    text-align: center;
 
     & p {
       padding-bottom: 1rem;
