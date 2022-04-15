@@ -1,11 +1,11 @@
 .event {
   padding-bottom: 0.5rem;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 
   &__grid--4 {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 3rem 4rem 4rem 4rem;
+    grid-template-rows: 3rem 4rem 1fr 4rem;
     row-gap: 0;
 
     @mixin atXLarge {
@@ -29,24 +29,27 @@
   &__date {
     grid-column: 1 / 2;
 
+    @mixin atXLarge {
+      max-width: 10rem;
+    }
+
     &--en {
-      font-size: 1rem;
+      font-size: 1.2rem;
       font-weight: 200;
-      font-style: italic;
 
       @mixin atXLarge {
-        font-size: 0.75rem;
+        font-size: 1.2rem;
       }
     }
 
     &--jp {
       font-family: "Noto Sans JP", sans-serif;
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       font-weight: 400;
 
       & span {
         font-family: "Poppins", sans-serif;
-        font-size: clamp(1rem, 2.1vw, 1.875rem);
+        font-size: clamp(1rem, 2.1vw, 1.5rem);
       }
     }
   }
@@ -68,7 +71,7 @@
       text-align: center;
       font-size: 0.875;
       font-weight: 700;
-      border: 1px solid black;
+      border: 1px solid white;
       padding: 5px 15px;
     }
   }
@@ -77,9 +80,9 @@
     grid-column: 1/2;
     grid-row: 3/4;
     text-align: center;
-    font-size: clamp(1.5rem, 2.1vw, 1.875rem);
+    font-size: clamp(1.2rem, 2.1vw, 1.5rem);
     font-weight: 600;
-    font-style: italic;
+    margin-bottom: 1rem;
 
     @mixin atXLarge {
       grid-column: 3/4;
@@ -117,15 +120,15 @@
     font-size: 0.875;
     font-weight: 500;
     text-decoration: none;
-    color: #fff;
-    background-color: black;
+    color: black;
+    background-color: white;
     border: none;
     border-radius: 1.5rem;
 
     &--off {
-      background-color: white;
-      color: grey;
-      border: 1px solid grey;
+      background-color: black;
+      color: white;
+      border: 1px solid white;
       pointer-events: none;
     }
   }

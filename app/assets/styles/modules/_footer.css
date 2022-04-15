@@ -3,14 +3,38 @@
   color: #fff;
   background-color: black;
 
-  & img {
+  &__organizer {
+    margin-bottom: 2rem;
+
+    & p {
+      padding-bottom: 1rem;
+    }
+  }
+
+  &__sponsors {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    column-gap: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+    & img {
+      max-width: 150px;
+      max-height: 50px;
+    }
+  }
+
+  &__insta {
     display: block;
     height: min(10%, 50px);
     width: min(10%, 50px);
     margin: 0 auto;
   }
 
-  & p {
+  &__copyright {
     padding-top: min(4%, 3.125rem);
     padding-bottom: min(3%, 2.188rem);
     text-align: center;
