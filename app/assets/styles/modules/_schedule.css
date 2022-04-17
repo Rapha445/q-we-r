@@ -1,6 +1,10 @@
 .schedule {
   margin-bottom: min(16.5%, 12.5rem);
-  margin-top: -10rem;
+  margin-top: -17rem;
+
+  @mixin atMedium {
+    margin-top: -10rem;
+  }
 
   &__title {
     display: flex;
