@@ -30,6 +30,7 @@
     top: 26px;
     left: 20px;
     z-index: 10;
+    cursor: pointer;
 
     &::before {
       content: "";
