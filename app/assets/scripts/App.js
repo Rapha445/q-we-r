@@ -15,6 +15,7 @@ new HamburgerMenu();
 //         modal.openTheModal()
 //     }
 // })
+
 $('.slider-index__slider').each(function() {
     var $this = $(this);
     var $group = $this.find('.slider-index__slide_group');
