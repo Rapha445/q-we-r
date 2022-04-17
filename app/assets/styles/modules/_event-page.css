@@ -36,15 +36,21 @@
     margin-right: clamp(2rem, 10%, 3.75rem);
     margin-left: clamp(2rem, 10%, 3.75rem);
     gap: 3.75rem;
+    justify-content: space-between;
 
     @mixin atLarge {
       flex-direction: row;
     }
-
-    & p {
+    & div {
       flex: 1 1 0px;
       font-size: clamp(0.8rem, 2vw, 1rem);
       line-height: 1.2;
+    }
+  }
+
+  &__description-box {
+    & p {
+      margin-bottom: 1.5rem;
     }
   }
 

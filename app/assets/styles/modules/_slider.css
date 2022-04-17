@@ -44,7 +44,7 @@
 
 .slide_buttons {
   left: 0;
-  position: absolute;
+  position: relative;
   right: 0;
   text-align: center;
 }
@@ -69,14 +69,14 @@ a.slide_btn {
 .directional_nav {
   height: 340px;
   margin: 0 auto;
-  max-width: 940px;
+  max-width: 1000px;
   position: relative;
-  top: -340px;
+  top: -390px;
 }
 
 .previous_btn {
   bottom: 0;
-  left: 100px;
+  left: 20px;
   margin: auto;
   position: absolute;
   top: 0;
@@ -86,7 +86,7 @@ a.slide_btn {
   bottom: 0;
   margin: auto;
   position: absolute;
-  right: 100px;
+  right: 20px;
   top: 0;
 }
 
