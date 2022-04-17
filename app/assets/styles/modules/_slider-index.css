@@ -47,12 +47,12 @@
 
   &__slide_btn.active,
   &__slide_btn:hover {
-    color: #428cc6;
+    color: #fff;
     cursor: pointer;
   }
 
   &__directional_nav {
-    height: 340px;
+    height: 360px;
     margin: 0 auto;
     max-width: 1000px;
     position: relative;
@@ -71,14 +71,14 @@
     bottom: 0;
     margin: auto;
     position: absolute;
-    right: 50px;
+    right: 30px;
     top: 0;
   }
 
   &__previous_btn,
   &__next_btn {
     cursor: pointer;
-    height: 65px;
+    height: 55px;
     opacity: 0.5;
     -webkit-transition: opacity 0.4s ease-in-out;
     -moz-transition: opacity 0.4s ease-in-out;
@@ -95,10 +95,10 @@
 
   @media only screen and (max-width: 767px) {
     &__previous_btn {
-      left: 50px;
+      left: 20px;
     }
     &__next_btn {
-      right: 50px;
+      right: 0px;
     }
   }
 }
