@@ -41,10 +41,18 @@
       flex-direction: row;
     }
 
-    & p {
-      flex: 1 1 0px;
+    & div {
+      flex: 50%;
       font-size: clamp(0.8rem, 2vw, 1rem);
       line-height: 1.2;
+    }
+
+    & p {
+      margin-bottom: 1rem;
+
+      & a {
+        color: white;
+      }
     }
   }
 
