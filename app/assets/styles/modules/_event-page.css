@@ -1,6 +1,6 @@
 .event-page {
   margin-top: 30px;
-  margin-bottom: 4rem;
+  margin-bottom: -21rem;
   overflow: visible;
 
   &__schedule__title {
@@ -64,5 +64,11 @@
     gap: 1.44rem;
     margin-right: min(5%, 3.75rem);
     margin-left: min(5%, 3.75rem);
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
   }
 }

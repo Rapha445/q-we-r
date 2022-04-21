@@ -18,11 +18,14 @@
   }
 
   &__slide {
-    display: none;
     height: 100%;
     position: absolute;
     width: 100%;
-    background-color: orange;
+
+    & img {
+      height: 100%;
+      object-fit: cover;
+    }
 
     & p {
       position: absolute;

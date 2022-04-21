@@ -2,6 +2,10 @@
   padding-bottom: 0.5rem;
   border-bottom: 1px solid white;
 
+  @mixin atMedium {
+    padding-bottom: 1.5rem;
+  }
+
   &__grid--4 {
     display: grid;
     grid-template-columns: 1fr;
@@ -34,11 +38,11 @@
     }
 
     &--en {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       font-weight: 200;
 
       @mixin atXLarge {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
       }
     }
 
