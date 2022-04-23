@@ -37,10 +37,6 @@
     margin-left: clamp(2rem, 10%, 3.75rem);
     gap: 3.75rem;
 
-    @mixin atLarge {
-      flex-direction: row;
-    }
-
     & div {
       flex: 50%;
       font-size: clamp(0.8rem, 2vw, 1rem);
@@ -70,5 +66,39 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+  }
+
+  &__images {
+    display: flex;
+    gap: 21px;
+    flex-wrap: wrap;
+  }
+  &__img {
+    object-fit: contain;
+
+    &--xsmall {
+      max-width: 200px;
+      object-fit: contain;
+    }
+
+    &--small {
+      max-width: 265px;
+      object-fit: contain;
+    }
+
+    &--sm {
+      max-width: 320px;
+      object-fit: contain;
+    }
+
+    &--medium {
+      max-width: 491px;
+      object-fit: contain;
+    }
+
+    &--full {
+      max-width: 100%;
+      object-fit: contain;
+    }
   }
 }
