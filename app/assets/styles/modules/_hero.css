@@ -124,7 +124,7 @@
         transform: translateY(50px) rotateZ(225deg);
       }
 
-      &:hover {
+      body.hasHover &:hover {
         &:before {
           animation: lineUp 1s cubic-bezier(0, 0.6, 1, 0.4) infinite 0.5s;
         }
