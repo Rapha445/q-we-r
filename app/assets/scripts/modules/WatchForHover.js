@@ -8,15 +8,16 @@ class WatchForHover {
         document.addEventListener('touchstart', () => this.disableHover())
         document.addEventListener('mousemove', () => this.enableHover())
     }
-    enableHover() {
-        if (this.date - this.lastTouchTime < 500) return
-        document.body.classList.add('hasHover');
+    updateLastTouchTime() {
+        this.lastTouchTime = new Date();
+        console.log(this.lastTouchTime);
     }
     disableHover() {
         document.body.classList.remove('hasHover');
     }
-    updateLastTouchTime() {
-        lastTouchTime = this.date;
+    enableHover() {
+        if (Date() - this.lastTouchTime < 500) return
+        document.body.classList.add('hasHover');
     }
 }
 
