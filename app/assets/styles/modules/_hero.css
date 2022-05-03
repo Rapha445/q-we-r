@@ -4,10 +4,10 @@
   row-gap: 20px;
   grid-template-columns: 6.2% 12.2% 5.4% 4.3% 3.4% 9% 6% 21% 3.4% 4.8% 5.1% 7.2% 12%;
   grid-template-areas:
-    ". one  one  one  one  one   one  one   one   one   one   one    six"
-    ". five five .    two  two   two  two   .     .     .     .      six"
-    ". five five .    .    eight .    three three three three three  three"
-    ". four four four four four  four ten   ten   ten   ten     ten  ten";
+    ". one  one  one  one  one  one  one   one   one   one   one   ."
+    ". five five five five five .    two   two   two   .     .     ."
+    ". five five five five five .    three three three three three three"
+    ". four four four four four four four   ten   ten   ten   ten   ten";
 
   @mixin atMedium {
     grid-template-areas:
@@ -27,10 +27,10 @@
 
   &__element {
     &--text {
-      font-size: min(12vw, 10.625rem);
+      font-size: min(13vw, 10.625rem);
       font-weight: 600;
       text-align: left;
-      line-height: min(11vw, 155px);
+      line-height: min(20vw, 155px);
       align-self: start;
     }
 
@@ -48,14 +48,25 @@
 
     &--4 {
       grid-area: four;
+      justify-self: start;
+
+      @mixin atMedium {
+        justify-self: center;
+      }
     }
 
     &--5 {
+      align-self: start;
       grid-area: five;
+
+      @mixin atMedium {
+        align-self: center;
+      }
     }
 
     &--6 {
       grid-area: six;
+      align-self: end;
     }
 
     &--7 {
@@ -72,17 +83,15 @@
 
     &--10 {
       grid-area: ten;
+      justify-self: start;
+
+      @mixin atMedium {
+        justify-self: center;
+      }
     }
   }
 
   &__scrolldown {
-    p {
-      font-size: 1rem;
-      font-weight: 600;
-      padding-bottom: 0.8rem;
-      text-align: center;
-    }
-
     &__arrow {
       width: 6rem;
       height: 6rem;
@@ -92,6 +101,15 @@
       overflow: hidden;
       position: relative;
       cursor: pointer;
+
+      & a {
+        display: block;
+        width: 96px;
+        height: 96px;
+        position: relative;
+        top: -5px;
+        left: -5px;
+      }
 
       &:before {
         position: absolute;

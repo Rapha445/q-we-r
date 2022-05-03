@@ -1,0 +1,18 @@
+.reveal-item {
+  opacity: 0;
+
+  &--is-visible {
+    animation: show 0.5s forwards ease-in;
+  }
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
