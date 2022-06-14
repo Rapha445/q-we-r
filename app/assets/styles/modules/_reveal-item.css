@@ -1,15 +1,35 @@
 .reveal-item {
   opacity: 0;
+  position: relative;
 
-  &--is-visible {
-    animation: show 0.5s forwards ease-in;
+  &--fade-in-up {
+    animation: fadeinup 0.5s forwards ease-in-out;
+  }
+
+  &--fade-in-down {
+    animation: fadeindown 0.5s forwards ease-in-out;
+  }
+
+  &--p-absolute {
+    position: absolute;
   }
 }
 
-@keyframes show {
+@keyframes fadeinup {
   0% {
     opacity: 0;
     transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fadeindown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
   }
   100% {
     opacity: 1;

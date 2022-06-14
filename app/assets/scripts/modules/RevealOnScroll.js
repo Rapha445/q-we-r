@@ -27,7 +27,7 @@ class RevealOnScroll {
         if (window.scrollY + this.browserHeight > el.offsetTop) {
             let scrollPercent = (el.getBoundingClientRect().top / this.browserHeight) * 100;
             if (scrollPercent < this.thresholdPercent) {
-                el.classList.add("reveal-item--is-visible");
+                el.classList.add("reveal-item--fade-in-up");
                 el.isRevealed = true;
                 if (el.isLastItem) {
                     window.removeEventListener("scroll", this.scrollThrottle);
